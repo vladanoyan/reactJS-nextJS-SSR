@@ -1,0 +1,116 @@
+.duration {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+}
+.duration .logo img {
+    max-width: 450px;
+    width: 100%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    animation-duration: 4s;
+}
+@media (max-width: 992px) {
+    .duration .logo img {
+        left: initial;
+    }
+}
+
+#img {
+    position: relative;
+}
+#img img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+#img .discription {
+    padding: 0 60px;
+    position: absolute;
+    bottom: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+@media (max-width: 992px) {
+    #img .discription {
+        padding: 0 30px;
+    }
+}
+#img .discription .link {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 300;
+    cursor: pointer;
+}
+#img .discription .textWhite {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    height: 1px;
+    overflow: hidden;
+    margin: 0;
+}
+#img:before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease 0s;
+}
+#img .separator {
+    margin-top: 35px;
+    height: 1px;
+    opacity: .5;
+    background: #fff;
+    width: 20%;
+    transition: all 0.5s ease 0s;
+}
+#img:hover:before {
+    opacity: 1 !important;
+}
+#img:hover .separator {
+    width: 70%;
+}
+#img:hover .textWhite {
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+}
+
+.downMenu {
+    opacity: 0;
+    animation: down 1s ease-in both;
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.downFade {
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none !important;
+    overflow: hidden;
+}
+
+/*# sourceMappingURL=component.css.map */

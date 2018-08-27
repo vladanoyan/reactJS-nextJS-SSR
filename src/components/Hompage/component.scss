@@ -1,0 +1,33 @@
+.home{
+  .navbar{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+
+  }
+  .content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+    pointer-events: all!important;
+
+  }
+
+  .IconToggle{
+    cursor: pointer;
+    opacity: .7;
+    transition: all .5s;
+    color: #fff;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    z-index: 9;
+    animation-duration: 20s;
+
+    &:hover{
+      opacity: .5;
+    }
+  }
+}

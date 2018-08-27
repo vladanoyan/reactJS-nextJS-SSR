@@ -1,0 +1,24 @@
+.categoryNavbar {
+  position: relative;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px; }
+  .categoryNavbar .categoryNavbarLogo {
+    color: #fff; }
+  .categoryNavbar .linkMenuUl {
+    margin: 0;
+    padding: 0; }
+  .categoryNavbar .linkMenuLi {
+    display: inline-block; }
+  .categoryNavbar .linkMenu {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+    margin: 5px; }
+    .categoryNavbar .linkMenu:hover {
+      background: rgba(255, 255, 255, 0.42); }
+
+/*# sourceMappingURL=component.css.map */

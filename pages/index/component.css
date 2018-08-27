@@ -1,0 +1,37 @@
+.home{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+    pointer-events: all!important;
+    opacity: 1!important;
+
+}
+
+.IconToggle {
+    cursor: pointer;
+    opacity: .7;
+    transition: all .5s;
+    color: #fff;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    z-index: 9;
+    animation-duration: 20s;
+}
+.IconToggle:hover {
+    opacity: .5;
+}
+h1{
+    transition: all 3s;
+    display: flex;
+}
+.hayk{
+    transition:all 2s;}

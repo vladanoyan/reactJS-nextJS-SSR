@@ -1,0 +1,28 @@
+.categoryNavbar{
+  position: relative;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  .categoryNavbarLogo{
+    color:#fff;
+  }
+  .linkMenuUl{
+    margin: 0;
+    padding: 0;
+  }
+  .linkMenuLi{
+    display: inline-block;
+  }
+  .linkMenu{
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+    margin: 5px;
+    &:hover{
+      background: rgba(255, 255, 255, 0.42);
+    }
+  }
+}
