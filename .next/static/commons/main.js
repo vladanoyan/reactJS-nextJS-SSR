@@ -13495,9 +13495,35 @@ exports.SourceNode = __webpack_require__("./node_modules/next/node_modules/sourc
 /***/ }),
 
 /***/ "./node_modules/normalize.css/normalize.css":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Loading PostCSS Plugin failed: Cannot find module 'postcss-nested'\n\n(@/Users/admin/Desktop/nextjs/postcss.config.js)\n    at load (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:21:13)\n    at Object.keys.filter.map (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:53:16)\n    at Array.map (<anonymous>)\n    at plugins (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:52:8)\n    at config.load.then (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/index.js:72:18)\n    at <anonymous>\n    at runLoaders (/Users/admin/Desktop/nextjs/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/admin/Desktop/nextjs/node_modules/postcss-loader/src/index.js:208:9)\n    at <anonymous>");
+// removed by extract-text-webpack-plugin;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1535444588547");
+          });
+      }
+    }
+  
 
 /***/ }),
 
@@ -35329,23 +35355,104 @@ module.exports = function(module) {
 /***/ }),
 
 /***/ "./pages/index/component.css":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Loading PostCSS Plugin failed: Cannot find module 'postcss-nested'\n\n(@/Users/admin/Desktop/nextjs/postcss.config.js)\n    at load (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:21:13)\n    at Object.keys.filter.map (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:53:16)\n    at Array.map (<anonymous>)\n    at plugins (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:52:8)\n    at config.load.then (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/index.js:72:18)\n    at <anonymous>\n    at runLoaders (/Users/admin/Desktop/nextjs/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/admin/Desktop/nextjs/node_modules/postcss-loader/src/index.js:208:9)\n    at <anonymous>");
+// removed by extract-text-webpack-plugin
+module.exports = {"home":"s87mOHIcr3hBnYqHA4c1J","content":"_2U8Ce61pBxx2fwIVOEcfWX"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1535444588517");
+          });
+      }
+    }
+  
 
 /***/ }),
 
 /***/ "./src/components/Owl-corousel-pages/owl-pages.css":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Loading PostCSS Plugin failed: Cannot find module 'postcss-nested'\n\n(@/Users/admin/Desktop/nextjs/postcss.config.js)\n    at load (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:21:13)\n    at Object.keys.filter.map (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:53:16)\n    at Array.map (<anonymous>)\n    at plugins (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:52:8)\n    at config.load.then (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/index.js:72:18)\n    at <anonymous>\n    at runLoaders (/Users/admin/Desktop/nextjs/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/admin/Desktop/nextjs/node_modules/postcss-loader/src/index.js:208:9)\n    at <anonymous>");
+// removed by extract-text-webpack-plugin
+module.exports = {"OwlcarouselPages":"_1F7DgoqUYUf5gnCKvWsCzq","imgPages":"_14UuCQcPkC25tB7vyWGrTq","IconToggle":"_2dDFq2UqVIMMmbWYueUHrU"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1535444588561");
+          });
+      }
+    }
+  
 
 /***/ }),
 
 /***/ "./src/components/Owl-corousel/owl.css":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Loading PostCSS Plugin failed: Cannot find module 'postcss-nested'\n\n(@/Users/admin/Desktop/nextjs/postcss.config.js)\n    at load (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:21:13)\n    at Object.keys.filter.map (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:53:16)\n    at Array.map (<anonymous>)\n    at plugins (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/plugins.js:52:8)\n    at config.load.then (/Users/admin/Desktop/nextjs/node_modules/postcss-load-config/src/index.js:72:18)\n    at <anonymous>\n    at runLoaders (/Users/admin/Desktop/nextjs/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/admin/Desktop/nextjs/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/admin/Desktop/nextjs/node_modules/postcss-loader/src/index.js:208:9)\n    at <anonymous>");
+// removed by extract-text-webpack-plugin
+module.exports = {"duration":"onaOMEv-8GAEJsaD9aCM3","logo":"_2XHXgf7bBPw8Lp1Eu_aVft","img":"_3g0aOpKPMHBeexQjONEihY","discription":"TeZ3e4IRE5Vb4Ut5kAHmC","link":"g9LOFyzdAr84XmFSyLU5e","textWhite":"_9AU8XJ_U4mOPVKUOyyRWz","separator":"bse--L_A0d9cOMunIXcOd","downMenu":"_1YyCJcFqXy1Jk4pVVQHx9C","down":"_3t_hJ79NF9NGE7Ey8mjvlQ","downFade":"_2iDDKn3akSHAPPJOu9j0qq"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1535444588602");
+          });
+      }
+    }
+  
 
 /***/ }),
 

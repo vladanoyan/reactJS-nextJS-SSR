@@ -1,7 +1,12 @@
 import React, { Component } from "react"
 import dynamic from "next/dynamic"
-const OwlCarouselPages = dynamic(import("react-owl-carousel"))
+const OwlCarouselPages = dynamic(import("react-owl-carousel"));
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTh } from '@fortawesome/free-solid-svg-icons';
 import cs from "./owl-pages.css"
+
+library.add(faTh);
 
 class OwlcarouselPages extends Component {
   constructor() {
@@ -29,6 +34,12 @@ class OwlcarouselPages extends Component {
 
     return (
       <div className={cs.OwlcarouselPages}>
+        <FontAwesomeIcon
+          icon="th"
+          size='2x'
+          className={cs.IconToggle}
+          onClick={this.props.toggleClick}
+        />
         <OwlCarouselPages className="owl-theme" {...options}>
           {this.props.items.map((item, index) => {
             return (

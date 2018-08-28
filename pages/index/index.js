@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import Layout from '../../src/components/Layout';
-import CarouselPagesCss from '../../src/components/Owl-corousel-pages/Coarousel-pages.js'
-import Carousel from '../../src/components/Owl-corousel/Coarousel.js';
+import Layout from '../../src/lib/Layout';
 import OwlCarousel from '../../src/components/Owl-corousel';
 import CarouselPages from '../../src/components/Owl-corousel-pages';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTh } from '@fortawesome/free-solid-svg-icons';
 import cs from './component.css';
 
-library.add(faTh);
 
 class Home extends Component {
   constructor() {
@@ -35,24 +29,17 @@ class Home extends Component {
   };
 
   render() {
+    const li = this.props.list.map((item)=><li key={item.id}>{item.name}</li>);
     return (
       <Layout>
-        <h1 className={cs.hayk}>asjhdajshdjaksxxxxx</h1>
+        <ul>
+          {li}
+        </ul>
         <div className={cs.home}>
-          <Carousel>
-            <OwlCarousel items={this.props.list} toggle={this.state.toggle} animate={this.redirectPage} />
-          </Carousel>
+          <OwlCarousel items={this.props.list} toggle={this.state.toggle} animate={this.redirectPage} />
           <div className={cs.content}>
             <div className='fadeIn'>
-              <FontAwesomeIcon
-                icon="th"
-                size='2x'
-                className={cs.IconToggle}
-                onClick={this.toggleClick}
-              />
-              <CarouselPagesCss>
-                <CarouselPages items={this.props.list} position={this.state.position} />
-              </CarouselPagesCss>
+              <CarouselPages items={this.props.list} position={this.state.position} toggleClick={this.toggleClick} />
             </div>
           </div>
         </div>

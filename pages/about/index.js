@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import Layout from '../../src/components/Layout';
+import Layout from '../../src/lib/Layout';
 import Flex, { Col } from '../../src/components/Flex';
 import {connect} from 'react-redux';
 // import cs from './component.css';

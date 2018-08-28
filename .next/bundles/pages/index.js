@@ -5780,6 +5780,14 @@ module.exports = __webpack_require__("./node_modules/next/dist/lib/dynamic.js")
 
 /***/ }),
 
+/***/ "./node_modules/next/router.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./node_modules/next/dist/lib/router/index.js")
+
+
+/***/ }),
+
 /***/ "./node_modules/react-redux/es/components/Provider.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8248,17 +8256,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_components_Layout__ = __webpack_require__("./src/components/Layout.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_components_Owl_corousel_pages_Coarousel_pages_js__ = __webpack_require__("./src/components/Owl-corousel-pages/Coarousel-pages.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_components_Owl_corousel_Coarousel_js__ = __webpack_require__("./src/components/Owl-corousel/Coarousel.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_components_Owl_corousel__ = __webpack_require__("./src/components/Owl-corousel/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_Owl_corousel_pages__ = __webpack_require__("./src/components/Owl-corousel-pages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fortawesome_react_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__fortawesome_fontawesome_svg_core__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__fortawesome_free_solid_svg_icons__ = __webpack_require__("./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__component_css__ = __webpack_require__("./pages/index/component.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__component_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__component_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/pages/index/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_lib_Layout__ = __webpack_require__("./src/lib/Layout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_components_Owl_corousel__ = __webpack_require__("./src/components/Owl-corousel/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_components_Owl_corousel_pages__ = __webpack_require__("./src/components/Owl-corousel-pages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__component_css__ = __webpack_require__("./pages/index/component.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__component_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__component_css__);
+var _jsxFileName = "/Users/admin/Desktop/reactJS-nextJS-SSR/pages/index/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -8280,12 +8283,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
-
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_8__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_9__fortawesome_free_solid_svg_icons__["a" /* faTh */]);
 
 var Home =
 /*#__PURE__*/
@@ -8337,70 +8334,60 @@ function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_components_Layout__["a" /* default */], {
+      var li = this.props.list.map(function (item) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+          key: item.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          }
+        }, item.name);
+      });
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_lib_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 34
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-        className: __WEBPACK_IMPORTED_MODULE_10__component_css__["default"].hayk,
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 35
         }
-      }, "asjhdajshdjaksxxxxx"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: __WEBPACK_IMPORTED_MODULE_10__component_css__["default"].home,
+      }, li), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: __WEBPACK_IMPORTED_MODULE_5__component_css___default.a.home,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 38
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__src_components_Owl_corousel_Coarousel_js__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__src_components_Owl_corousel__["a" /* default */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__src_components_Owl_corousel__["a" /* default */], {
         items: this.props.list,
         toggle: this.state.toggle,
         animate: this.redirectPage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 39
         }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: __WEBPACK_IMPORTED_MODULE_10__component_css__["default"].content,
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: __WEBPACK_IMPORTED_MODULE_5__component_css___default.a.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 40
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "fadeIn",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 41
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], {
-        icon: "th",
-        size: "2x",
-        className: __WEBPACK_IMPORTED_MODULE_10__component_css__["default"].IconToggle,
-        onClick: this.toggleClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__src_components_Owl_corousel_pages_Coarousel_pages_js__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__src_components_Owl_corousel_pages__["a" /* default */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__src_components_Owl_corousel_pages__["a" /* default */], {
         items: this.props.list,
         position: this.state.position,
+        toggleClick: this.toggleClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 42
         }
-      }))))));
+      })))));
     }
   }]);
 
@@ -8436,72 +8423,6 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ "./src/components/Layout.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css__ = __webpack_require__("./node_modules/normalize.css/normalize.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_normalize_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Layout.js";
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
-  var children = _ref.children;
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    className: "jsx-3289109782"
-  }, children, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-    styleId: "3289109782",
-    css: "@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');body{margin:0;padding:0;font-family:'Roboto',sans-serif;}*{box-sizing:border-box;}.owl-carousel{display:block!important;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jb21wb25lbnRzL0xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPTyxBQUdzRixBQUdsRSxBQU1hLEFBR0MsU0FSYixVQUNzQixHQUtsQyxFQUdBLDJCQVBBIiwiZmlsZSI6InNyYy9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvYWRtaW4vRGVza3RvcC9uZXh0anMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0ICdub3JtYWxpemUuY3NzJztcblxuZXhwb3J0IGRlZmF1bHQgKHsgY2hpbGRyZW4gfSkgPT4gKFxuICA8ZGl2PlxuICAgIHtjaGlsZHJlbn1cbiAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgIHtgXG5cbiAgICAgICAgQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG86MzAwLDQwMCw1MDAsNzAwJyk7XG5cbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgZm9udC1mYW1pbHk6J1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgICAgIH1cblxuICAgICAgICAqIHtcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICAgIC5vd2wtY2Fyb3VzZWx7XG4gICAgICAgICAgZGlzcGxheTpibG9jayFpbXBvcnRhbnQ7XG4gICAgICAgIH1cblxuXG4gICAgICBgfVxuICAgIDwvc3R5bGU+XG4gICAgPHNjcmlwdD5cblxuICAgIDwvc2NyaXB0PlxuICA8L2Rpdj5cbik7XG4iXX0= */\n/*@ sourceURL=src/components/Layout.js */"
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("script", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    className: "jsx-3289109782"
-  }));
-});
-
-/***/ }),
-
-/***/ "./src/components/Owl-corousel-pages/Coarousel-pages.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css__ = __webpack_require__("./node_modules/normalize.css/normalize.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_normalize_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel-pages/Coarousel-pages.js";
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
-  var children = _ref.children;
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    className: "jsx-963033633"
-  }, children, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-    styleId: "963033633",
-    css: ".owl-dots{position:absolute;bottom:20px;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:100%;}.owl-dots .active span{width:2px !important;height:35px !important;background:#fff !important;}.owl-dots .owl-dot{outline:none;background-color:transparent;}.owl-dots .owl-dot span{width:2px !important;height:15px;position:relative;}.owl-dots .owl-dot span:hover{background:#fff !important;}@media (max-width:767px){.owl-dots .owl-dot span{margin:5px 4px;}}.owl-dots .owl-dot span:before{content:'' !important;height:20px !important;width:2px !important;background:#fff;position:absolute;left:0;bottom:0;}.downMenu{-webkit-animation-delay:.5s;animation-delay:.5s;opacity:0;-webkit-animation:down 1s ease-in both;animation:down 1s ease-in both;}@-webkit-keyframes down{from{opacity:0;-webkit-transform:translate3d(0,-60%,0);-ms-transform:translate3d(0,-60%,0);transform:translate3d(0,-60%,0);}to{opacity:1;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}}@keyframes down{from{opacity:0;-webkit-transform:translate3d(0,-60%,0);-ms-transform:translate3d(0,-60%,0);transform:translate3d(0,-60%,0);}to{opacity:1;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jb21wb25lbnRzL093bC1jb3JvdXNlbC1wYWdlcy9Db2Fyb3VzZWwtcGFnZXMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT08sQUFJNkIsQUFPRyxBQUtSLEFBSVEsQUFLTSxBQUlSLEFBSUcsQUFTRixBQU1OLEFBSUEsVUFId0IsQUFJSCxHQXBDTixFQWE3QixHQXpCWSxHQU9XLEFBU1gsQ0FhVyxLQVIzQixHQXBCYSxHQWdCUyxNQWZjLEdBV3BDLEVBTCtCLENBc0JOLEdBUVgsR0FwQmQsT0FxQm1DLFFBUmYsS0F0QnBCLFdBdUJzQixrQkFDWCxPQUNFLEVBZVQsT0FkSixFQVVJLFVBTEosZ0JBckNlLFdBQ2YiLCJmaWxlIjoic3JjL2NvbXBvbmVudHMvT3dsLWNvcm91c2VsLXBhZ2VzL0NvYXJvdXNlbC1wYWdlcy5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvYWRtaW4vRGVza3RvcC9uZXh0anMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0ICdub3JtYWxpemUuY3NzJztcblxuZXhwb3J0IGRlZmF1bHQgKHsgY2hpbGRyZW4gfSkgPT4gKFxuICA8ZGl2PlxuICAgIHtjaGlsZHJlbn1cbiAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgIHtgXG5cbiAgICAgLm93bC1kb3RzIHtcbiAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgICAgIGxlZnQ6IDUwJTtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgIH1cbiAgICAgICAub3dsLWRvdHMgLmFjdGl2ZSBzcGFuIHtcbiAgICAgICAgICB3aWR0aDogMnB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgaGVpZ2h0OiAzNXB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2ZmZiAhaW1wb3J0YW50O1xuICAgICAgfVxuICAgICAub3dsLWRvdHMgLm93bC1kb3Qge1xuICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gICAgICB9XG4gICAgICAub3dsLWRvdHMgLm93bC1kb3Qgc3BhbiB7XG4gICAgICAgICAgd2lkdGg6IDJweCAhaW1wb3J0YW50O1xuICAgICAgICAgIGhlaWdodDogMTVweDtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB9XG4gICAgICAub3dsLWRvdHMgLm93bC1kb3Qgc3Bhbjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2ZmZiAhaW1wb3J0YW50O1xuICAgICAgfVxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7XG4gICAgICAgICAgIC5vd2wtZG90cyAub3dsLWRvdCBzcGFuIHtcbiAgICAgICAgICAgICAgbWFyZ2luOiA1cHggNHB4O1xuICAgICAgICAgIH1cbiAgICAgIH1cbiAgICAgLm93bC1kb3RzIC5vd2wtZG90IHNwYW46YmVmb3JlIHtcbiAgICAgICAgICBjb250ZW50OiAnJyAhaW1wb3J0YW50O1xuICAgICAgICAgIGhlaWdodDogMjBweCAhaW1wb3J0YW50O1xuICAgICAgICAgIHdpZHRoOiAycHggIWltcG9ydGFudDtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjZmZmO1xuICAgICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgIGJvdHRvbTogMDtcbiAgICAgIH1cbiAgICAuZG93bk1lbnUge1xuICAgICAgICAgIGFuaW1hdGlvbi1kZWxheTogLjVzO1xuICAgICAgICAgIG9wYWNpdHk6IDA7XG4gICAgICAgICAgYW5pbWF0aW9uOiBkb3duIDFzIGVhc2UtaW4gYm90aDtcbiAgICAgIH1cbiAgICAgIEBrZXlmcmFtZXMgZG93biB7XG4gICAgICAgICAgZnJvbSB7XG4gICAgICAgICAgICAgIG9wYWNpdHk6IDA7XG4gICAgICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgLTYwJSwgMCk7XG4gICAgICAgICAgfVxuICAgICAgICAgIHRvIHtcbiAgICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKTtcbiAgICAgICAgICB9XG4gICAgICB9XG5cblxuICAgICAgYH1cbiAgICA8L3N0eWxlPlxuXG4gIDwvZGl2PlxuKTtcbiJdfQ== */\n/*@ sourceURL=src/components/Owl-corousel-pages/Coarousel-pages.js */"
-  }));
-});
-
-/***/ }),
-
 /***/ "./src/components/Owl-corousel-pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8510,9 +8431,12 @@ var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel-page
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_dynamic__ = __webpack_require__("./node_modules/next/dynamic.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_dynamic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_dynamic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__owl_pages_css__ = __webpack_require__("./src/components/Owl-corousel-pages/owl-pages.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__owl_pages_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__owl_pages_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel-pages/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome_svg_core__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_solid_svg_icons__ = __webpack_require__("./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__owl_pages_css__ = __webpack_require__("./src/components/Owl-corousel-pages/owl-pages.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__owl_pages_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__owl_pages_css__);
+var _jsxFileName = "/Users/admin/Desktop/reactJS-nextJS-SSR/src/components/Owl-corousel-pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -8563,6 +8487,10 @@ var OwlCarouselPages = __WEBPACK_IMPORTED_MODULE_1_next_dynamic___default()( fal
 }));
 
 
+
+
+__WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_4__fortawesome_free_solid_svg_icons__["a" /* faTh */]);
+
 var OwlcarouselPages =
 /*#__PURE__*/
 function (_Component) {
@@ -8599,17 +8527,26 @@ function (_Component) {
         }
       };
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: __WEBPACK_IMPORTED_MODULE_2__owl_pages_css__["default"].OwlcarouselPages,
+        className: __WEBPACK_IMPORTED_MODULE_5__owl_pages_css___default.a.OwlcarouselPages,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 36
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(OwlCarouselPages, _extends({
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], {
+        icon: "th",
+        size: "2x",
+        className: __WEBPACK_IMPORTED_MODULE_5__owl_pages_css___default.a.IconToggle,
+        onClick: this.props.toggleClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(OwlCarouselPages, _extends({
         className: "owl-theme"
       }, options, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 43
         }
       }), this.props.items.map(function (item, index) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
@@ -8620,20 +8557,20 @@ function (_Component) {
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35
+            lineNumber: 46
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          className: "".concat(__WEBPACK_IMPORTED_MODULE_2__owl_pages_css__["default"].item, " ").concat(__WEBPACK_IMPORTED_MODULE_2__owl_pages_css__["default"].imgPages),
+          className: "".concat(__WEBPACK_IMPORTED_MODULE_5__owl_pages_css___default.a.item, " ").concat(__WEBPACK_IMPORTED_MODULE_5__owl_pages_css___default.a.imgPages),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40
+            lineNumber: 51
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
           src: item.src,
           alt: item.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 52
           }
         })));
       })));
@@ -8647,36 +8584,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/Owl-corousel/Coarousel.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css__ = __webpack_require__("./node_modules/normalize.css/normalize.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_normalize_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel/Coarousel.js";
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
-  var children = _ref.children;
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    className: "jsx-1345883906"
-  }, children, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-    styleId: "1345883906",
-    css: ".owl-dots{position:absolute;bottom:20px;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:100%;}.owl-dots .active span{width:2px !important;height:35px !important;background:#fff !important;}.owl-dots .owl-dot{outline:none;background-color:transparent;}.owl-dots .owl-dot span{width:2px !important;height:15px;position:relative;}.owl-dots .owl-dot span:hover{background:#fff !important;}@media (max-width:767px){.owl-dots .owl-dot span{margin:5px 4px;}}.owl-dots .owl-dot span:before{content:'' !important;height:20px !important;width:2px !important;background:#fff;position:absolute;left:0;bottom:0;}.downMenu{opacity:0;-webkit-animation:down 1s ease-in both;animation:down 1s ease-in both;}@-webkit-keyframes down{from{opacity:0;-webkit-transform:translate3d(0,-30%,0);-ms-transform:translate3d(0,-30%,0);transform:translate3d(0,-30%,0);}to{opacity:1;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}}@keyframes down{from{opacity:0;-webkit-transform:translate3d(0,-30%,0);-ms-transform:translate3d(0,-30%,0);transform:translate3d(0,-30%,0);}to{opacity:1;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}}.downFade{opacity:0;-webkit-transition:all .3s;transition:all .3s;pointer-events:none !important;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jb21wb25lbnRzL093bC1jb3JvdXNlbC9Db2Fyb3VzZWwuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT08sQUFHK0IsQUFPSyxBQUtOLEFBSVUsQUFLTSxBQUlaLEFBSUssQUFVZCxBQU1FLEFBSUEsQUFLSixVQWR1QixBQU1LLEFBSUgsQUFLaEIsR0ExQ2MsRUFhM0IsR0F6Qk0sR0FPYSxBQVNQLENBYVMsS0FSdEIsR0FwQkksR0FnQmUsTUFmUSxHQVcvQixFQUw0QixDQXNCSixNQVp0QixLQXFDNEIsVUF4QlgsS0F0Qm5CLFNBK0JBLEVBUnFCLEtBd0JOLGFBdkJMLEdBd0JaLElBdkJjLEVBZ0JSLE9BZkEsRUFXQSwwQkEzQ00sV0FDWiIsImZpbGUiOiJzcmMvY29tcG9uZW50cy9Pd2wtY29yb3VzZWwvQ29hcm91c2VsLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9hZG1pbi9EZXNrdG9wL25leHRqcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgJ25vcm1hbGl6ZS5jc3MnO1xuXG5leHBvcnQgZGVmYXVsdCAoeyBjaGlsZHJlbiB9KSA9PiAoXG4gIDxkaXY+XG4gICAge2NoaWxkcmVufVxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAge2BcbiAgICAgICAgICAub3dsLWRvdHMge1xuICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgICAgICAgbGVmdDogNTAlO1xuICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgfVxuICAgICAgICAgICAgLm93bC1kb3RzIC5hY3RpdmUgc3BhbiB7XG4gICAgICAgICAgICAgIHdpZHRoOiAycHggIWltcG9ydGFudDtcbiAgICAgICAgICAgICAgaGVpZ2h0OiAzNXB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmYgIWltcG9ydGFudDtcbiAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIC5vd2wtZG90cyAub3dsLWRvdCB7XG4gICAgICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgLm93bC1kb3RzIC5vd2wtZG90IHNwYW4ge1xuICAgICAgICAgICAgICAgICAgd2lkdGg6IDJweCAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxNXB4O1xuICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC5vd2wtZG90cyAub3dsLWRvdCBzcGFuOmhvdmVyIHtcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmYgIWltcG9ydGFudDtcbiAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgICAgICAgICAgICAgICAub3dsLWRvdHMgLm93bC1kb3Qgc3BhbiB7XG4gICAgICAgICAgICAgICAgICBtYXJnaW46IDVweCA0cHg7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAub3dsLWRvdHMgLm93bC1kb3Qgc3BhbjpiZWZvcmUge1xuICAgICAgICAgICAgICAgIGNvbnRlbnQ6ICcnICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgICAgd2lkdGg6IDJweCAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmY7XG4gICAgICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgICAgIGxlZnQ6IDA7XG4gICAgICAgICAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5kb3duTWVudSB7XG4gICAgICAgICAgICAgIG9wYWNpdHk6IDA7XG4gICAgICAgICAgICAgIGFuaW1hdGlvbjogZG93biAxcyBlYXNlLWluIGJvdGg7XG4gICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBAa2V5ZnJhbWVzIGRvd24ge1xuICAgICAgICAgICAgICBmcm9tIHtcbiAgICAgICAgICAgICAgICBvcGFjaXR5OiAwO1xuICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgLTMwJSwgMCk7XG4gICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgdG8ge1xuICAgICAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKTtcbiAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgLmRvd25GYWRlIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDA7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBhbGwgLjNzO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmUgIWltcG9ydGFudDtcbiAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgICAgICAgIH1cblxuXG4gICAgICBgfVxuICAgIDwvc3R5bGU+XG5cbiAgPC9kaXY+XG4pO1xuIl19 */\n/*@ sourceURL=src/components/Owl-corousel/Coarousel.js */"
-  }));
-});
-
-/***/ }),
-
 /***/ "./src/components/Owl-corousel/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8685,9 +8592,11 @@ var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel/Coar
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_dynamic__ = __webpack_require__("./node_modules/next/dynamic.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_dynamic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_dynamic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__owl_css__ = __webpack_require__("./src/components/Owl-corousel/owl.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__owl_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__owl_css__);
-var _jsxFileName = "/Users/admin/Desktop/nextjs/src/components/Owl-corousel/index.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_router__ = __webpack_require__("./node_modules/next/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__owl_css__ = __webpack_require__("./src/components/Owl-corousel/owl.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__owl_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__owl_css__);
+var _jsxFileName = "/Users/admin/Desktop/reactJS-nextJS-SSR/src/components/Owl-corousel/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -8704,6 +8613,7 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -8773,6 +8683,9 @@ function (_Component) {
   _createClass(Owlcarousel, [{
     key: "direct",
     value: function direct(name, id) {
+      __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.replace("/", "/".concat(id, "/").concat(name), {
+        shallow: true
+      });
       this.props.animate(name, id);
     }
   }, {
@@ -8783,88 +8696,88 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 37
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: this.props.toggle ? "".concat(__WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].duration) : "".concat(__WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].duration, " ").concat(__WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].downFade),
+        className: this.props.toggle ? "".concat(__WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.duration) : "".concat(__WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.duration, " ").concat(__WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.downFade),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 38
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].logo,
+        className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.logo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 45
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
         src: "/static/images/Larima_NEW_LOGO.png",
         alt: "logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(OwlCarousel, _extends({
         className: "owl-theme"
       }, options, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 48
         }
       }), this.props.items.map(function (item, index) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].downMenu,
+          className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.downMenu,
           style: {
             animationDuration: "".concat(item.timer, "s")
           },
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 49
+            lineNumber: 51
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
           className: "item",
-          id: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].img,
+          id: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.img,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 56
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
           src: item.src,
           alt: item.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
-          }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].discription,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 56
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 57
           }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-          onClick: _this.direct.bind(_this, item.name, item.id),
-          className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].link,
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.discription,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 58
           }
-        }, item.name)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-          className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].textWhite,
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 59
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          onClick: _this.direct.bind(_this, item.name, item.id),
+          className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.link,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 60
+          }
+        }, item.name)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.textWhite,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 67
           }
         }, item.text), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          className: __WEBPACK_IMPORTED_MODULE_2__owl_css__["default"].separator,
+          className: __WEBPACK_IMPORTED_MODULE_3__owl_css___default.a.separator,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 68
           }
         }))));
       }))));
@@ -8875,6 +8788,42 @@ function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 /* harmony default export */ __webpack_exports__["a"] = (Owlcarousel);
+
+/***/ }),
+
+/***/ "./src/lib/Layout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_normalize_css_normalize_css__ = __webpack_require__("./node_modules/normalize.css/normalize.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_normalize_css_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__node_modules_normalize_css_normalize_css__);
+var _jsxFileName = "/Users/admin/Desktop/reactJS-nextJS-SSR/src/lib/Layout.js";
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  var children = _ref.children;
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    className: "jsx-1080801314"
+  }, children, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
+    styleId: "1080801314",
+    css: "@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');body{margin:0;padding:0;font-family:'Roboto',sans-serif;}*{box-sizing:border-box;}.owl-carousel{display:block!important;}.owl-dots{position:absolute;bottom:20px;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:100%;}.owl-dots .active span{width:2px !important;height:35px !important;background:#fff !important;}.owl-dots .owl-dot{outline:none;background-color:transparent;}.owl-dots .owl-dot span{width:2px !important;height:15px;position:relative;}.owl-dots .owl-dot span:hover{background:#fff !important;}@media (max-width:767px){.owl-dots .owl-dot span{margin:5px 4px;}}.owl-dots .owl-dot span:before{content:'' !important;height:20px !important;width:2px !important;background:#fff;position:absolute;left:0;bottom:0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9saWIvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9PLEFBR3NGLEFBR2xFLEFBTWEsQUFHQyxBQUdMLEFBT0csQUFLUixBQUlRLEFBS00sQUFJUixBQUlHLFNBeENaLElBd0JtQixFQWE3QixHQXpCWSxDQVhvQixFQWtCVCxBQVNYLENBdEJkLEFBbUN5QixFQWhDekIsR0F3QkYsR0FwQmEsR0FnQlMsTUFmYyxHQVdwQyxFQUwrQixDQXNCTixNQXhDdkIsQUE0QkYsZUFhb0IsS0F0QnBCLFdBdUJzQixrQkFDWCxPQUNFLFNBQ2IsNEJBaENlLFdBQ2YiLCJmaWxlIjoic3JjL2xpYi9MYXlvdXQuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2FkbWluL0Rlc2t0b3AvcmVhY3RKUy1uZXh0SlMtU1NSIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCAnLi4vLi4vbm9kZV9tb2R1bGVzL25vcm1hbGl6ZS5jc3Mvbm9ybWFsaXplLmNzcyc7XG5cbmV4cG9ydCBkZWZhdWx0ICh7IGNoaWxkcmVuIH0pID0+IChcbiAgPGRpdj5cbiAgICB7Y2hpbGRyZW59XG4gICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICB7YFxuXG4gICAgICAgIEBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvOjMwMCw0MDAsNTAwLDcwMCcpO1xuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OidSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgICAgICB9XG5cbiAgICAgICAgKiB7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgfVxuICAgICAgICAub3dsLWNhcm91c2Vse1xuICAgICAgICAgIGRpc3BsYXk6YmxvY2shaW1wb3J0YW50O1xuICAgICAgICB9XG4gICAgICAgICAgICAgLm93bC1kb3RzIHtcbiAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgICAgIGxlZnQ6IDUwJTtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgIH1cbiAgICAgICAub3dsLWRvdHMgLmFjdGl2ZSBzcGFuIHtcbiAgICAgICAgICB3aWR0aDogMnB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgaGVpZ2h0OiAzNXB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2ZmZiAhaW1wb3J0YW50O1xuICAgICAgfVxuICAgICAgIC5vd2wtZG90cyAub3dsLWRvdCB7XG4gICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgICAgIH1cbiAgICAgICAub3dsLWRvdHMgLm93bC1kb3Qgc3BhbiB7XG4gICAgICAgICAgd2lkdGg6IDJweCAhaW1wb3J0YW50O1xuICAgICAgICAgIGhlaWdodDogMTVweDtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB9XG4gICAgICAgLm93bC1kb3RzIC5vd2wtZG90IHNwYW46aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmYgIWltcG9ydGFudDtcbiAgICAgIH1cbiAgICAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgICAgICAgICAgLm93bC1kb3RzIC5vd2wtZG90IHNwYW4ge1xuICAgICAgICAgICAgICBtYXJnaW46IDVweCA0cHg7XG4gICAgICAgICAgfVxuICAgICAgfVxuICAgICAgIC5vd2wtZG90cyAub3dsLWRvdCBzcGFuOmJlZm9yZSB7XG4gICAgICAgICAgY29udGVudDogJycgIWltcG9ydGFudDtcbiAgICAgICAgICBoZWlnaHQ6IDIwcHggIWltcG9ydGFudDtcbiAgICAgICAgICB3aWR0aDogMnB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2ZmZjtcbiAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICBib3R0b206IDA7XG4gICAgICB9XG5cblxuICAgICAgYH1cbiAgICA8L3N0eWxlPlxuICAgIDxzY3JpcHQ+XG5cbiAgICA8L3NjcmlwdD5cbiAgPC9kaXY+XG4pO1xuIl19 */\n/*@ sourceURL=src/lib/Layout.js */"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("script", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    className: "jsx-1080801314"
+  }));
+});
 
 /***/ }),
 

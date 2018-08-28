@@ -2,6 +2,12 @@ const withCSS = require('@zeit/next-css');
 
 module.exports = withCSS({
   cssModules: true,
+  test: /\.css$/,
+  use: [
+    'style-loader',
+    { loader: 'css-loader', options: { cssModules: true } },
+    'postcss-loader',
+  ],
   webpack: (config) => {
     config.module.rules.push(
       {
@@ -16,10 +22,7 @@ module.exports = withCSS({
           {
             loader: 'skeleton-loader',
             options: {
-              procedure: function (content) {
-                return `module.exports = \`${content}\``
-              },
-              toCode: true
+             cssModules: true,
             }
           },
           'postcss-loader'

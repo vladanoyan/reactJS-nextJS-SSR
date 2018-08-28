@@ -1,5 +1,5 @@
 import React from 'react';
-import 'normalize.css';
+import '../../node_modules/normalize.css/normalize.css';
 
 export default ({ children }) => (
   <div>
@@ -7,7 +7,21 @@ export default ({ children }) => (
     <style jsx global>
       {`
 
-     .owl-dots {
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+        body {
+          margin: 0;
+          padding: 0;
+          font-family:'Roboto', sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+        .owl-carousel{
+          display:block!important;
+        }
+             .owl-dots {
           position: absolute;
           bottom: 20px;
           left: 50%;
@@ -19,24 +33,24 @@ export default ({ children }) => (
           height: 35px !important;
           background: #fff !important;
       }
-     .owl-dots .owl-dot {
+       .owl-dots .owl-dot {
           outline: none;
           background-color: transparent;
       }
-      .owl-dots .owl-dot span {
+       .owl-dots .owl-dot span {
           width: 2px !important;
           height: 15px;
           position: relative;
       }
-      .owl-dots .owl-dot span:hover {
+       .owl-dots .owl-dot span:hover {
           background: #fff !important;
       }
-      @media (max-width: 767px) {
+       @media (max-width: 767px) {
            .owl-dots .owl-dot span {
               margin: 5px 4px;
           }
       }
-     .owl-dots .owl-dot span:before {
+       .owl-dots .owl-dot span:before {
           content: '' !important;
           height: 20px !important;
           width: 2px !important;
@@ -45,25 +59,12 @@ export default ({ children }) => (
           left: 0;
           bottom: 0;
       }
-    .downMenu {
-          animation-delay: .5s;
-          opacity: 0;
-          animation: down 1s ease-in both;
-      }
-      @keyframes down {
-          from {
-              opacity: 0;
-              transform: translate3d(0, -60%, 0);
-          }
-          to {
-              opacity: 1;
-              transform: translate3d(0, 0, 0);
-          }
-      }
 
 
       `}
     </style>
+    <script>
 
+    </script>
   </div>
 );

@@ -1,6 +1,7 @@
-import React, { Component } from "react"
-import dynamic from "next/dynamic"
-const OwlCarousel = dynamic(import("react-owl-carousel"))
+import React, { Component } from "react";
+import dynamic from "next/dynamic";
+import Router from 'next/router';
+const OwlCarousel = dynamic(import("react-owl-carousel"));
 import cs from "./owl.css"
 
 const options = {
@@ -27,6 +28,7 @@ const options = {
 
 class Owlcarousel extends Component {
   direct(name, id) {
+    Router.replace(`/`, `/${id}/${name}`, {shallow:true});
     this.props.animate(name, id)
   }
 

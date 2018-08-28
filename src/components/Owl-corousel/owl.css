@@ -90,7 +90,6 @@
     overflow: auto;
     opacity: 1;
 }
-
 .downMenu {
     opacity: 0;
     animation: down 1s ease-in both;
@@ -112,5 +111,3 @@
     pointer-events: none !important;
     overflow: hidden;
 }
-
-/*# sourceMappingURL=component.css.map */
